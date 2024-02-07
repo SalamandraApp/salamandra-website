@@ -2,12 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://salamandra-app.com/test/</loc>
-    <lastmod>2024-02-07T10:12:25-05:00</lastmod>
+    <loc>https://salamandra-app.com/</loc>
+  </url><url>
+    <loc>https://salamandra-app.com/about/</loc>
   </url><url>
     <loc>https://salamandra-app.com/categories/</loc>
-  </url><url>
-    <loc>https://salamandra-app.com/</loc>
   </url><url>
     <loc>https://salamandra-app.com/tags/</loc>
   </url>
