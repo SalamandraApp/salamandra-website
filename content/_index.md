@@ -11,3 +11,5 @@ We want to focus on simple features, using as much open-source tools, make an ap
 We are still in very early stages of development and the website is a work in progress.
 
 [About Us](/about/)
+
+![logo](/images/salamander_noBackground.png)
