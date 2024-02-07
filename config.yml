@@ -1,4 +1,4 @@
 baseURL: 'https://salamandra-app.com/'
 languageCode: en-us
 title: Salamandra App
-theme: PaperMod
+theme: custom-PaperMod
