@@ -28,41 +28,13 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript><meta property="og:title" content="" />
+</noscript><meta property="og:title" content="Salamdra" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://salamandra-app.com/" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
+<meta name="twitter:title" content="Salamdra"/>
 <meta name="twitter:description" content=""/>
 
 <script type="application/ld+json">
@@ -74,66 +46,57 @@
   "description": "",
   "thumbnailUrl": "https://salamandra-app.com/favicon.ico",
   "sameAs": [
-      
+      "https://github.com/SalamandraApp"
   ]
 }
 </script>
 </head>
 
-<body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
+<body class="list dark" id="top">
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://salamandra-app.com/" accesskey="h" title="Salamandra App (Alt + H)">Salamandra App</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
             </div>
         </div>
         <ul id="menu">
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<div class="post-content"><h1 id="welcome-to-salamandra-app">Welcome to Salamandra App<a hidden class="anchor" aria-hidden="true" href="#welcome-to-salamandra-app">#</a></h1>
-<p>Salamandra is an android App to organize and structure your workouts.</p>
-<p>We want to focus on simple features, using as much open-source tools, make an app we want to use and really just learn.</p>
-<p>We are still in very early stages of development and the website is a work in progress.</p>
-<p><a href="/about/">About Us</a></p>
-<p><img loading="lazy" src="/images/salamander_noBackground.png" alt="logo"  />
-</p>
-
-
+<main class="main"><div class="profile">
+    <div class="profile_inner">
+        <img draggable="false" src="https://salamandra-app.com/images/salamander_noBackground.png" alt="&lt;title of image as alt&gt;" title="&lt;title of image as alt&gt;"
+            height="500" width="500" />
+        <h1>Salamandra App</h1>
+        <span></span><div class="social-icons" >
+    <a href="https://github.com/SalamandraApp" target="_blank" rel="noopener noreferrer me"
+        title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
 </div>
+
+        <div class="buttons">
+            <a class="button" href="/home" rel="noopener" title="Home">
+                <span class="button-inner">
+                    Home
+                </span>
+            </a>
+            <a class="button" href="/about" rel="noopener" title="About Us">
+                <span class="button-inner">
+                    About Us
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
     </main>
     
 <footer class="footer">
@@ -190,18 +153,6 @@
             mybutton.style.opacity = "0";
         }
     };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
 
 </script>
 </body>
