@@ -8,11 +8,12 @@
     <language>en-us</language>
     <atom:link href="https://salamandra-app.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
-      <link>https://salamandra-app.com/test/</link>
-      <pubDate>Wed, 07 Feb 2024 10:12:25 -0500</pubDate>
-      <guid>https://salamandra-app.com/test/</guid>
-      <description>TESTING </description>
+      <title>About Us</title>
+      <link>https://salamandra-app.com/about_us/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://salamandra-app.com/about_us/</guid>
+      <description>We are Jaime and Alberto, computer science students from Spain.
+We just want to use the development of the app to learn and build a comprehensive project</description>
     </item>
   </channel>
 </rss>
