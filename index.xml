@@ -8,6 +8,15 @@
     <language>en-us</language>
     <atom:link href="https://salamandra-app.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>https://salamandra-app.com/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://salamandra-app.com/home/</guid>
+      <description>Welcome to Salamandra App Salamandra is an android App to organize and structure your workouts.
+We want to focus on simple features, using as much open-source tools, make an app we want to use and really just learn.
+We are still in very early stages of development and the website is a work in progress.</description>
+    </item>
+    <item>
       <title>About Us</title>
       <link>https://salamandra-app.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
