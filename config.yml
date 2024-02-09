@@ -9,10 +9,10 @@ params:
     enabled: true
     title: "Salamandra App" # optional default will be site title
     subtitle: ""
-    imageUrl: "images/salamander_noBackground.png" # optional
-    imageTitle: "<title of image as alt>" # optional
-    imageWidth: 500
-    imageHeight: 500
+    imageUrl: "images/salamandra.png"
+    imageTitle: "<title of image as alt>"
+    imageWidth: 600
+    imageHeight: 600
     buttons:
       - name: Home
         url: "/home"
