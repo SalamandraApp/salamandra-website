@@ -16,7 +16,7 @@ params:
     buttons:
       - name: Welcome
         url: "/home"
-      - name: Featues
+      - name: Features
         url: "/features"
       - name: About Us
         url: "/about"

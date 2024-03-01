@@ -12,6 +12,6 @@ Also, using identity providers centralizes logins, ending up with all you accoun
 
 We use and recommend [KeePassDX](https://www.keepassdx.com/#download) for Android and [KeePassXC](https://keepassxc.org/) for Desktop.
 
-You can generate a secure password and store the encrypted password database guarded under the only master password you need to remember.
+Instead of using the same password for everything you can **generate a secure password** and store the encrypted password database guarded under the only master password you need to remember.
 
 ![](/images/keepass.png)

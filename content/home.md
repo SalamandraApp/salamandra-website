@@ -10,4 +10,5 @@ We are still in very early stages of development and the website is a work in pr
 
 #### [Design Decisions](/design_decisions/)
 #### [Our Philosophy](/philosophy/)
+#### [About The Code](/code/)
 
