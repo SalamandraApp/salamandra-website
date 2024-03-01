@@ -14,7 +14,15 @@
       <guid>https://salamandra-app.com/home/</guid>
       <description>Welcome to Salamandra App Salamandra is an android App to organize and structure your workouts.
 We are still in very early stages of development and the website is a work in progress.
-Design Decisions Our Philosophy </description>
+Design Decisions Our Philosophy About The Code </description>
+    </item>
+    <item>
+      <title>About The Code</title>
+      <link>https://salamandra-app.com/code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://salamandra-app.com/code/</guid>
+      <description>We want to include a less technical description of how the project is structured for people that are interested, but are less familiar with code. It will also help us work on making the project more understandable and improve our ability to explain it to others.
+The app you are using is written in Kotlin, and the backend that supports it is in Rust. We had some previous experience with Android development, but are completely new to Rust.</description>
     </item>
     <item>
       <title>About Us</title>
@@ -23,6 +31,20 @@ Design Decisions Our Philosophy </description>
       <guid>https://salamandra-app.com/about/</guid>
       <description>We are Jaime and Alberto, computer science students from Spain.
 We just want to use the development of the app to learn and build a comprehensive project</description>
+    </item>
+    <item>
+      <title>Android App</title>
+      <link>https://salamandra-app.com/android_app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://salamandra-app.com/android_app/</guid>
+      <description>work in progress&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Backend Server</title>
+      <link>https://salamandra-app.com/backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://salamandra-app.com/backend/</guid>
+      <description>work in progress&amp;hellip;</description>
     </item>
     <item>
       <title>Design Decision</title>
@@ -45,8 +67,8 @@ Secure Password Management We use and recommend KeePassDX for Android and KeePas
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://salamandra-app.com/philosophy/</guid>
       <description>Free and Open source Other people explain this way better than we ever could, you can read about it here
-GNU Philosophy Free Software Linux Foundation What is Free Open Source You can find open source alternatives to your favorito apps and tools here
-We try to use as many open source technologies as we can, but have made some compromises out of necessity as we&amp;rsquo;re still learning the ropes with lesser-known open-source options.</description>
+GNU Philosophy Free Software You can find open source alternatives to your favorito apps and tools here
+We try to use as many open source technologies as we can, but have made some compromises out of necessity, we&amp;rsquo;re still learning the ropes with lesser-known open-source options. Our goal is to fully embrace open technologies as our expertise grows.</description>
     </item>
   </channel>
 </rss>
