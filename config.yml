@@ -11,8 +11,8 @@ params:
     subtitle: ""
     imageUrl: "images/salamander_noBackground.png"
     imageTitle: "<title of image as alt>"
-    imageWidth: 450
-    imageHeight: 450
+    imageWidth: 300
+    imageHeight: 300
     buttons:
       - name: Welcome
         url: "/home"
