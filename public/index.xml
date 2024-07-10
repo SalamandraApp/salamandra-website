@@ -60,8 +60,9 @@ We just want to use the development of the app to learn and build a comprehensiv
       <link>http://localhost:1313/design_decisions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/design_decisions/</guid>
-      <description>Why we don&amp;rsquo;t use identity providers Identity providers (eg. login with Google, Facebook&amp;hellip;) often lack open-source practices, making it difficult to trust their security, but mostly privacy measures. We&amp;rsquo;re not comfortable relying solely on size and reputation of a company when it comes to sensitive user data. Also, using identity providers centralizes logins, ending up with all you accounts under you Google/Apple/Facebook/Amazon.
-Secure Password Management We use and recommend KeePassDX for Android and KeePassXC for Desktop.</description>
+      <description>Why we don&amp;rsquo;t use identity providers Identity providers (eg. login with Google, Facebook&amp;hellip;) often lack open-source practices, making it difficult to trust privacy measures. We&amp;rsquo;re not comfortable relying solely on size and reputation of a company when it comes to user data.
+Secure Password Management We use and recommend KeePassDX for Android and KeePassXC for Desktop.
+Instead of using the same password for everything you can generate a secure password and store the encrypted password database guarded under the only master password you need to remember.</description>
     </item>
     <item>
       <title>Features</title>
@@ -75,9 +76,8 @@ Secure Password Management We use and recommend KeePassDX for Android and KeePas
       <link>http://localhost:1313/philosophy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/philosophy/</guid>
-      <description>Free and Open source Other people explain this way better than we ever could, you can read about it here
-GNU Philosophy Free Software You can find open source alternatives to your favorito apps and tools here
-We try to use as many open source technologies as we can, but have made some compromises out of necessity, we&amp;rsquo;re still learning the ropes with lesser-known open-source options. Our goal is to fully embrace open technologies as our expertise grows.</description>
+      <description>Free and Open source Compared to probably most of the apps you use Salamandra is open-source, meaning the code is on the Internet for everyone to see. We believe this is really important, but other people explain this way better than we ever could, you can read about it here
+GNU Philosophy Free Software If you are curious, you can find open source alternatives to your favorite apps and tools here</description>
     </item>
   </channel>
 </rss>
