@@ -2,6 +2,4 @@
 title: "Backend Server"
 ---
 
-![](/images/rust-banner.png)
-
-work in progress...
+ - [API Docs](/rest_api/)

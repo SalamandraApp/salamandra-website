@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Salamdra on Salamandra App</title>
+    <title>Salamandra on Salamandra App</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Salamdra on Salamandra App</description>
+    <description>Recent content in Salamandra on Salamandra App</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
@@ -15,6 +15,15 @@
       <description>Welcome to Salamandra App Salamandra is an android App to organize and structure your workouts.
 We are still in very early stages of development and the website is a work in progress.
 Design Decisions Our Philosophy About The Code </description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/rest_api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rest_api/</guid>
+      <description>Resources Users GET /users/{user_id} (Authenticated) Return user with corresponding id
+Path Parameters user_id UUID format Response application/json 200 OK User GET /users?username= (Authenticated) Return list of condensed user information given search term
+Query Parameters username username of the user to search for Response application/json 200 OK List[UserInfo] POST /users (Authenticated) Create a new user in the system using the information provided. Note: The user must have been previously registered in Cognito</description>
     </item>
     <item>
       <title>About The Code</title>
@@ -44,7 +53,7 @@ We just want to use the development of the app to learn and build a comprehensiv
       <link>http://localhost:1313/backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/backend/</guid>
-      <description> </description>
+      <description> API Docs </description>
     </item>
     <item>
       <title>Design Decision</title>

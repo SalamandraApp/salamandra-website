@@ -8,6 +8,10 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
+    <loc>http://localhost:1313/android_app/</loc>
+  </url><url>
+    <loc>http://localhost:1313/backend/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/design_decisions/</loc>
