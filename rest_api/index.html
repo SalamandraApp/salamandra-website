@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Salamandra App</title>
+<meta name="keywords" content="">
+<meta name="description" content="Resources Users GET /users/{user_id} (Authenticated) Return user with corresponding id
+Path Parameters user_id UUID format Response application/json 200 OK User GET /users?username= (Authenticated) Return list of condensed user information given search term
+Query Parameters username username of the user to search for Response application/json 200 OK List[UserInfo] POST /users (Authenticated) Create a new user in the system using the information provided. Note: The user must have been previously registered in Cognito">
+<meta name="author" content="">
+<link rel="canonical" href="https://salamandra-app.com/rest_api/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.00dcaf476d8097ff7ecd752d5daa3c3c70e48563e829b2c1b843682fa93ab5a4.css" integrity="sha256-ANyvR22Al/9&#43;zXUtXao8PHDkhWPoKbLBuENoL6k6taQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://salamandra-app.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://salamandra-app.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://salamandra-app.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://salamandra-app.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://salamandra-app.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Resources Users GET /users/{user_id} (Authenticated) Return user with corresponding id
+Path Parameters user_id UUID format Response application/json 200 OK User GET /users?username= (Authenticated) Return list of condensed user information given search term
+Query Parameters username username of the user to search for Response application/json 200 OK List[UserInfo] POST /users (Authenticated) Create a new user in the system using the information provided. Note: The user must have been previously registered in Cognito" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://salamandra-app.com/rest_api/" /><meta property="article:section" content="" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Resources Users GET /users/{user_id} (Authenticated) Return user with corresponding id
+Path Parameters user_id UUID format Response application/json 200 OK User GET /users?username= (Authenticated) Return list of condensed user information given search term
+Query Parameters username username of the user to search for Response application/json 200 OK List[UserInfo] POST /users (Authenticated) Create a new user in the system using the information provided. Note: The user must have been previously registered in Cognito"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "",
+      "item": "https://salamandra-app.com/rest_api/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Resources Users GET /users/{user_id} (Authenticated) Return user with corresponding id\nPath Parameters user_id UUID format Response application/json 200 OK User GET /users?username= (Authenticated) Return list of condensed user information given search term\nQuery Parameters username username of the user to search for Response application/json 200 OK List[UserInfo] POST /users (Authenticated) Create a new user in the system using the information provided. Note: The user must have been previously registered in Cognito",
+  "keywords": [
+    
+  ],
+  "articleBody": "Resources Users GET /users/{user_id} (Authenticated) Return user with corresponding id\nPath Parameters user_id UUID format Response application/json 200 OK User GET /users?username= (Authenticated) Return list of condensed user information given search term\nQuery Parameters username username of the user to search for Response application/json 200 OK List[UserInfo] POST /users (Authenticated) Create a new user in the system using the information provided. Note: The user must have been previously registered in Cognito\nBody Parameters CreateUserRequest CreateUserRequest Response application/json 201 CREATED User Exercises GET /exercise/{exercise_id} Return exercise with corresponding id\nPath Parameters exercise_id UUID format Response application/json 200 OK Exercise GET /exercise?name= Return list of exercises given search term\nQuery Parameters name name of the exercise to search for Response application/json 200 OK List[Exercise] Workout-Templates POST /users/{user_id}/workout-templates (Protected) Creates a new workout-template for an existing user\nPath Parameters user_id UUID format Body Parameters CreateWkTemplateRequest CreateWkTemplateRequest Response application/json 201 CREATED WorkoutTemplate DELETE /users/{user_id}/workout-templates/{workout_template_id} (Protected) Delete a user’s workout template with corresponding user id and template id\nPath Parameters workout_template_id UUID format user_id UUID format Response 204 NO CONTENT GET /users/{user_id}/workout-templates (Authenticated) Return a summary of all templates for a given user\nPath Parameters user_id UUID format Response application/json 200 OK GetAllTemplatesResponse GET /users/{user_id}/workout-templates/{workout_template_id} (Authenticated) Return a detailed description of a given template for a given user\nPath Parameters workout_template_id UUID format user_id UUID formt Response application/json 200 OK GetTemplateResponse Definitions User { \"id\": \"string (UUID format)\", \"username\": \"string\", \"display_name\": \"string\", \"date_joined\": \"string (YYYY-MM-DD format)\", \"date_of_birth\": \"string (YYYY-MM-DD format) or null\", \"height\": \"integer or null\", \"weight\": \"number (float) or null\", \"gender\": \"integer or null\", \"fitness_goal\": \"integer or null\", \"fitness_level\": \"integer or null\" } UserInfo { \"id\": \"string (UUID format)\", \"username\": \"string\", \"display_name\": \"string\", } CreateUserRequest { \"uuid\": \"string (UUID format)\", \"username\": \"string\", \"date_joined\": \"string (YYYY-MM-DD format)\" } Exercise { \"id\": \"string (UUID format)\", \"name\": \"string\", \"main_muscle_group\": \"integer or null\", \"secondary_muscle_group\": \"integer or null\", \"necessary_equipment\": \"integer or null\", \"exercise_type\": \"integer or null\" } WorkoutTemplate { \"id\": \"string (UUID format)\", \"user_id\": \"string (UUID format)\", \"name\": \"string\", \"description\": \"string or null\", \"date_created\": \"string (YYYY-MM-DD format)\" } CreateWkTemplateRequest The elements array must follow specific rules for the structure to be valid. The position of the exercises should range from 0 to n, without any missing spots or repetitions. Superset values should range from 0 to m, with at least two exercises sharing the same superset value. Additionally, for a given superset value, all exercises must have sequential position values.\n{ \"name\": \"string\", \"description\": \"string or null\", \"date_created\": \"string (YYYY-MM-DD format)\", \"elements\": [ { \"exercise_id\": \"string (UUID format)\", \"position\": \"integer\", \"reps\": \"integer\", \"sets\": \"integer\", \"weight\": \"integer\", \"rest\": \"integer\", \"super_set\": \"integer or null\" } ] } GetAllTemplatesResponse { \"count\": \"integer\", \"templates\": [ { \"id\": \"string (UUID format)\", \"user_id\": \"string (UUID format)\", \"name\": \"string\", \"description\": \"string or null\", \"date_created\": \"string (YYYY-MM-DD format)\" } ] } GetTemplateResponse { \"id\": \"string (UUID format)\", \"user_id\": \"string (UUID format)\", \"name\": \"string\", \"description\": \"string or null\", \"date_created\": \"string (YYYY-MM-DD format)\", \"elements\": [ { \"id\": \"string (UUID format)\", \"workout_template_id\": \"string (UUID format)\", \"exercise_id\": \"string (UUID format)\", \"exercise_name\": \"string\", \"position\": \"integer\", \"reps\": \"integer\", \"sets\": \"integer\", \"weight\": \"integer\", \"rest\": \"integer\", \"super_set\": \"integer or null\" } ] } ",
+  "wordCount" : "518",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://salamandra-app.com/rest_api/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Salamandra App",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://salamandra-app.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://salamandra-app.com/" accesskey="h" title="Salamandra App (Alt + H)">Salamandra App</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="resources">Resources<a hidden class="anchor" aria-hidden="true" href="#resources">#</a></h1>
+<h2 id="users">Users<a hidden class="anchor" aria-hidden="true" href="#users">#</a></h2>
+<h3 id="get-usersuser_id">GET /users/{user_id}<a hidden class="anchor" aria-hidden="true" href="#get-usersuser_id">#</a></h3>
+<p><em>(Authenticated)</em> Return user with corresponding id</p>
+<ul>
+<li>Path Parameters
+<ul>
+<li><code>user_id</code> UUID format</li>
+</ul>
+</li>
+<li>Response
+<ul>
+<li><code>application/json</code></li>
+<li>200 OK</li>
+<li><a href="#user">User</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="get-usersusername">GET /users?username=<a hidden class="anchor" aria-hidden="true" href="#get-usersusername">#</a></h3>
+<p><em>(Authenticated)</em> Return list of condensed user information given search term</p>
+<ul>
+<li>Query Parameters
+<ul>
+<li><code>username</code> username of the user to search for</li>
+</ul>
+</li>
+<li>Response
+<ul>
+<li><code>application/json</code></li>
+<li>200 OK</li>
+<li>List[<a href="#userinfo">UserInfo</a>]</li>
+</ul>
+</li>
+</ul>
+<h3 id="post-users">POST /users<a hidden class="anchor" aria-hidden="true" href="#post-users">#</a></h3>
+<p><em>(Authenticated)</em> Create a new user in the system using the information provided. Note: The user must have been previously registered in Cognito</p>
+<ul>
+<li>Body Parameters
+<ul>
+<li><code>CreateUserRequest</code> <a href="#createuserrequest">CreateUserRequest</a></li>
+</ul>
+</li>
+<li>Response
+<ul>
+<li><code>application/json</code></li>
+<li>201 CREATED</li>
+<li><a href="#user">User</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="exercises">Exercises<a hidden class="anchor" aria-hidden="true" href="#exercises">#</a></h2>
+<h3 id="get-exerciseexercise_id">GET /exercise/{exercise_id}<a hidden class="anchor" aria-hidden="true" href="#get-exerciseexercise_id">#</a></h3>
+<p>Return exercise with corresponding id</p>
+<ul>
+<li>Path Parameters
+<ul>
+<li><code>exercise_id</code> UUID format</li>
+</ul>
+</li>
+<li>Response
+<ul>
+<li><code>application/json</code></li>
+<li>200 OK</li>
+<li><a href="#exercise">Exercise</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="get-exercisename">GET /exercise?name=<a hidden class="anchor" aria-hidden="true" href="#get-exercisename">#</a></h3>
+<p>Return list of exercises given search term</p>
+<ul>
+<li>Query Parameters
+<ul>
+<li><code>name</code> name of the exercise to search for</li>
+</ul>
+</li>
+<li>Response
+<ul>
+<li><code>application/json</code></li>
+<li>200 OK</li>
+<li>List[<a href="#exercise">Exercise</a>]</li>
+</ul>
+</li>
+</ul>
+<h2 id="workout-templates">Workout-Templates<a hidden class="anchor" aria-hidden="true" href="#workout-templates">#</a></h2>
+<h3 id="post-usersuser_idworkout-templates">POST /users/{user_id}/workout-templates<a hidden class="anchor" aria-hidden="true" href="#post-usersuser_idworkout-templates">#</a></h3>
+<p><em>(Protected)</em> Creates a new workout-template for an existing user</p>
+<ul>
+<li>Path Parameters
+<ul>
+<li><code>user_id</code> UUID format</li>
+</ul>
+</li>
+<li>Body Parameters
+<ul>
+<li><code>CreateWkTemplateRequest</code> <a href="#createwktemplaterequest">CreateWkTemplateRequest</a></li>
+</ul>
+</li>
+<li>Response
+<ul>
+<li><code>application/json</code></li>
+<li>201 CREATED</li>
+<li><a href="#workouttemplate">WorkoutTemplate</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="delete-usersuser_idworkout-templatesworkout_template_id">DELETE /users/{user_id}/workout-templates/{workout_template_id}<a hidden class="anchor" aria-hidden="true" href="#delete-usersuser_idworkout-templatesworkout_template_id">#</a></h3>
+<p><em>(Protected)</em> Delete a user&rsquo;s workout template with corresponding user id and template id</p>
+<ul>
+<li>Path Parameters
+<ul>
+<li><code>workout_template_id</code> UUID format</li>
+<li><code>user_id</code> UUID format</li>
+</ul>
+</li>
+<li>Response
+<ul>
+<li>204 NO CONTENT</li>
+</ul>
+</li>
+</ul>
+<h3 id="get-usersuser_idworkout-templates">GET /users/{user_id}/workout-templates<a hidden class="anchor" aria-hidden="true" href="#get-usersuser_idworkout-templates">#</a></h3>
+<p><em>(Authenticated)</em> Return a summary of all templates for a given user</p>
+<ul>
+<li>Path Parameters
+<ul>
+<li><code>user_id</code> UUID format</li>
+</ul>
+</li>
+<li>Response
+<ul>
+<li><code>application/json</code></li>
+<li>200 OK</li>
+<li><a href="#getalltemplatesresponse">GetAllTemplatesResponse</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="get-usersuser_idworkout-templatesworkout_template_id">GET /users/{user_id}/workout-templates/{workout_template_id}<a hidden class="anchor" aria-hidden="true" href="#get-usersuser_idworkout-templatesworkout_template_id">#</a></h3>
+<p><em>(Authenticated)</em> Return a detailed description of a given template for a given user</p>
+<ul>
+<li>Path Parameters
+<ul>
+<li><code>workout_template_id</code> UUID format</li>
+<li><code>user_id</code> UUID formt</li>
+</ul>
+</li>
+<li>Response
+<ul>
+<li><code>application/json</code></li>
+<li>200 OK</li>
+<li><a href="#gettemplateresponse">GetTemplateResponse</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="definitions">Definitions<a hidden class="anchor" aria-hidden="true" href="#definitions">#</a></h1>
+<h2 id="user">User<a hidden class="anchor" aria-hidden="true" href="#user">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;display_name&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;date_joined&#34;</span>: <span style="color:#e6db74">&#34;string (YYYY-MM-DD format)&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;date_of_birth&#34;</span>: <span style="color:#e6db74">&#34;string (YYYY-MM-DD format) or null&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;height&#34;</span>: <span style="color:#e6db74">&#34;integer or null&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;weight&#34;</span>: <span style="color:#e6db74">&#34;number (float) or null&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;gender&#34;</span>: <span style="color:#e6db74">&#34;integer or null&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;fitness_goal&#34;</span>: <span style="color:#e6db74">&#34;integer or null&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;fitness_level&#34;</span>: <span style="color:#e6db74">&#34;integer or null&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="userinfo">UserInfo<a hidden class="anchor" aria-hidden="true" href="#userinfo">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;display_name&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="createuserrequest">CreateUserRequest<a hidden class="anchor" aria-hidden="true" href="#createuserrequest">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;uuid&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;date_joined&#34;</span>: <span style="color:#e6db74">&#34;string (YYYY-MM-DD format)&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="exercise">Exercise<a hidden class="anchor" aria-hidden="true" href="#exercise">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;main_muscle_group&#34;</span>: <span style="color:#e6db74">&#34;integer or null&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;secondary_muscle_group&#34;</span>: <span style="color:#e6db74">&#34;integer or null&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;necessary_equipment&#34;</span>: <span style="color:#e6db74">&#34;integer or null&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;exercise_type&#34;</span>: <span style="color:#e6db74">&#34;integer or null&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="workouttemplate">WorkoutTemplate<a hidden class="anchor" aria-hidden="true" href="#workouttemplate">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;user_id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;string or null&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;date_created&#34;</span>: <span style="color:#e6db74">&#34;string (YYYY-MM-DD format)&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="createwktemplaterequest">CreateWkTemplateRequest<a hidden class="anchor" aria-hidden="true" href="#createwktemplaterequest">#</a></h2>
+<p>The <code>elements</code> array must follow specific rules for the structure to be valid. The position of the exercises should range from 0 to n, without any missing spots or repetitions. Superset values should range from 0 to m, with at least two exercises sharing the same superset value. Additionally, for a given superset value, all exercises must have sequential position values.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;string or null&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;date_created&#34;</span>: <span style="color:#e6db74">&#34;string (YYYY-MM-DD format)&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;elements&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;exercise_id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;position&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;reps&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;sets&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;weight&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;rest&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;super_set&#34;</span>: <span style="color:#e6db74">&#34;integer or null&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="getalltemplatesresponse">GetAllTemplatesResponse<a hidden class="anchor" aria-hidden="true" href="#getalltemplatesresponse">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;count&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;templates&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;user_id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;string or null&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;date_created&#34;</span>: <span style="color:#e6db74">&#34;string (YYYY-MM-DD format)&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="gettemplateresponse">GetTemplateResponse<a hidden class="anchor" aria-hidden="true" href="#gettemplateresponse">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;user_id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;string or null&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;date_created&#34;</span>: <span style="color:#e6db74">&#34;string (YYYY-MM-DD format)&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;elements&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;workout_template_id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;exercise_id&#34;</span>: <span style="color:#e6db74">&#34;string (UUID format)&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;exercise_name&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;position&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;reps&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;sets&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;weight&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;rest&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;super_set&#34;</span>: <span style="color:#e6db74">&#34;integer or null&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://salamandra-app.com/">Salamandra App</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>
