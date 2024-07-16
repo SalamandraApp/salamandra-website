@@ -17,15 +17,6 @@ We are still in very early stages of development and the website is a work in pr
 Design Decisions Our Philosophy About The Code </description>
     </item>
     <item>
-      <title></title>
-      <link>https://salamandra-app.com/rest_api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://salamandra-app.com/rest_api/</guid>
-      <description>Resources Users GET /users/{user_id} (Authenticated) Return user with corresponding id
-Path Parameters user_id UUID format Response application/json 200 OK User GET /users?username= (Authenticated) Return list of condensed user information given search term
-Query Parameters username username of the user to search for Response application/json 200 OK List[UserInfo] POST /users (Authenticated) Create a new user in the system using the information provided. Note: The user must have been previously registered in Cognito</description>
-    </item>
-    <item>
       <title>About The Code</title>
       <link>https://salamandra-app.com/code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
